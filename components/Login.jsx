@@ -18,13 +18,13 @@ const Login = () => {
     },
   });
 
-  const registerUserHandler = (data) => {
+  const loginUserHandler = (data) => {
     console.log(data);
   };
 
   return (
     <div className="font-nunito w-full">
-      <form onSubmit={handleSubmit(registerUserHandler)} noValidate>
+      <form onSubmit={handleSubmit(loginUserHandler)} noValidate>
         <InputComponent
           label="Email"
           type="email"
