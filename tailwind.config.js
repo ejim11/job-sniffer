@@ -15,6 +15,10 @@ module.exports = {
       "color-curentColor": "currentColor",
       "color-transparent": "transparent",
       "color-white": "rgba(255, 255, 255, 1)",
+      "color-red": "red",
+      "color-grey": {
+        1: "#BDBDBD",
+      },
       "color-black": {
         1: "rgba(20, 20, 20, 1)",
       },
