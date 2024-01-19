@@ -5,8 +5,11 @@ import Button from "./Button";
 import { inputValidators } from "@/utils/formValidation";
 import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
+import { useRouter } from "next/navigation";
 
 const Login = () => {
+  const router = useRouter();
+
   const {
     register,
     handleSubmit,
@@ -20,6 +23,7 @@ const Login = () => {
 
   const loginUserHandler = (data) => {
     console.log(data);
+    router.replace("/dashboard");
   };
 
   return (
